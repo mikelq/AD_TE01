@@ -1,6 +1,7 @@
 package ad_te01;
 import java.io.*;
-public class ad_te01 {
+import java.util.ArrayList;
+public class Ejer1{
 
 	public static void main (String[] args) throws IOException {
 		
@@ -11,9 +12,15 @@ public class ad_te01 {
 		
 		int i;
 		
+		ArrayList<Character> texto = new ArrayList<Character>();
 		while ((i = ficE.read()) != -1)
-				//System.out.print((char) i);
-			ficS.write((char) i);
+				texto.add((char) i);
+				
+		for(int c=texto.size()-1; c>=0; c--){
+			ficS.write(texto.get(c));
+			
+		}
+			
 		ficE.close();
 		ficS.close();
 	}
