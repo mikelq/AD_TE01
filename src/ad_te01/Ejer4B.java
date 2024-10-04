@@ -35,7 +35,7 @@ public class Ejer4B {
                 
                 leerCadena(file, 10);  
 
-                /
+                
                 int pesoActual = file.readInt();
                 file.readInt(); 
 
